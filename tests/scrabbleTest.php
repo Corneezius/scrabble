@@ -15,7 +15,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
 
     function test_two_point_letters()
@@ -30,7 +29,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
 
     function test_three_point_letters()
@@ -59,7 +57,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
     function test_five_point_letters()
     {
@@ -73,7 +70,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
     function test_eight_point_letters()
     {
@@ -87,7 +83,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
     function test_ten_point_letters()
     {
@@ -101,7 +96,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
     function test_two_letter_words()
     {
@@ -115,7 +109,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
     function test_full_words()
     {
@@ -129,13 +122,6 @@
 
         //Assert
         $this->assertEquals($desired_result, $result);
-
     }
-
   }
-
-
-
-
-
  ?>

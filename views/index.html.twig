@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <title>Scrabble</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Let's Play Scrabble!</h1>
+            <form action="/result" method="get">
+                <div class="form-group">
+                    <label for="user_word">Enter a word:</label>
+                    <input id="user_word" name="user_word" type="text" class="form-control" placeholder="Enter letters only">
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form><hr>
+            {% if word != "" %}
+            <div class="jumbotron">
+                <h3>You entered:</h3>
+                <h1>{{word}}</h1>
+                <h3>Here is your total score:</h3>
+                <h1>{{total_score}}</h1>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
