@@ -103,6 +103,34 @@
         $this->assertEquals($desired_result, $result);
 
     }
+    function test_two_letter_words()
+    {
+        //Arrange
+        $user_input = "AN";
+        $test_Scrabble = new Scrabble($user_input);
+
+        //Act
+        $result = $test_Scrabble->total_score();
+        $desired_result = 2;
+
+        //Assert
+        $this->assertEquals($desired_result, $result);
+
+    }
+    function test_full_words()
+    {
+        //Arrange
+        $user_input = "hand";
+        $test_Scrabble = new Scrabble($user_input);
+
+        //Act
+        $result = $test_Scrabble->total_score();
+        $desired_result = 8;
+
+        //Assert
+        $this->assertEquals($desired_result, $result);
+
+    }
 
   }
 
